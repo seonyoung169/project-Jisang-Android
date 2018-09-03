@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/main_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:background="#FFFFFF">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="14dp"
+            android:background="#ffffff"
+            android:text="관리자 페이지"
+            android:textAlignment="center"
+            android:textColor="#4c2338"
+            android:textSize="20dp"
+            android:textStyle="normal" />
+
+
+    </RelativeLayout>
+    <ImageView
+        android:id="@+id/main_title_bar_shadow"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/main_title_bar"
+        android:src="@drawable/status_line" />
+    <TextView
+        android:layout_marginTop="25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="대표 이미지"
+        android:textColor="#000000"
+        android:textSize="14dp"
+        android:layout_gravity="center"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.github.siyamed.shapeimageview.CircularImageView
+            android:id="@+id/profile_image"
+            android:layout_width="128dp"
+            android:layout_height="128dp"
+            android:src="@drawable/pic"
+            android:layout_centerInParent="true"/>
+
+        <Button
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignBottom="@+id/profile_image"
+            android:layout_alignRight="@+id/profile_image"
+            android:background="@drawable/mgr_camera" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:text="BEST ITEM"
+        android:textSize="14dp"
+        android:layout_marginTop="42dp"
+        android:layout_gravity="center"
+        />
+
+    <GridLayout
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="3"
+        android:rowCount="2"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_marginBottom="10dp"
+            android:layout_width="88dp"
+            android:layout_height="88dp"
+            android:background="@drawable/pic"/>
+        <ImageView
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="88dp"
+            android:layout_height="88dp"
+            android:background="@drawable/pic"/>
+        <ImageView
+            android:layout_width="88dp"
+            android:layout_height="88dp"
+            android:background="@drawable/pic"/>
+        <ImageView
+            android:layout_width="88dp"
+            android:layout_height="88dp"
+            android:background="@drawable/pic"/>
+        <ImageView
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="88dp"
+            android:layout_height="88dp"
+            android:background="@drawable/pic"/>
+        <ImageView
+            android:layout_width="88dp"
+            android:layout_height="88dp"
+            android:background="@drawable/pic"/>
+
+    </GridLayout>
+
+    <TextView
+        android:layout_marginTop="13dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="상품 등록"
+        android:textSize="12dp"
+        android:textColor="#333333"
+        android:layout_gravity="center"
+        />
+    <Button
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/mgr_itemadd"
+        android:layout_gravity="center"
+        />
+
+
+</LinearLayout>

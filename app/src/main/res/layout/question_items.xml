@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/item_question_recyclerview_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/question_writer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="27dp"
+            android:layout_marginRight="27dp"
+            android:layout_marginTop="10dp"
+            android:text="이름"
+            android:textSize="9pt"
+            android:textColor="#000000"
+            />
+
+        <TextView
+            android:id="@+id/question_context"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="27dp"
+            android:layout_marginRight="27dp"
+            android:singleLine="true"
+            android:text="상품 문의 내용"
+            android:textSize="8pt"
+            android:textColor="#808080"
+            />
+
+        <RelativeLayout
+            android:id="@+id/question_reply_frame"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <EditText
+                android:id="@+id/question_reply_edittext"
+                android:layout_width="317dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="15dp"
+                android:paddingLeft="10dp"
+                android:hint="내용을 입력해주세요"
+                android:background="@drawable/reply_background" />
+
+            <Button
+                android:id="@+id/question_reply_write_btn"
+                android:layout_below="@+id/question_reply_edittext"
+                android:layout_width="65dp"
+                android:layout_height="23dp"
+                android:layout_marginBottom="25dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/register" />
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/question_reply_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/question_reply_write_btn">
+
+            </android.support.v7.widget.RecyclerView>
+        </RelativeLayout>
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/status_line" />
+    </LinearLayout>
+
+</LinearLayout>

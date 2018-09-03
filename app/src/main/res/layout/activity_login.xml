@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/main_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:background="#FFFFFF">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="14dp"
+            android:background="#ffffff"
+            android:text="로그인"
+            android:textAlignment="center"
+            android:textColor="#4c2338"
+            android:textSize="20dp"
+            android:textStyle="normal" />
+
+    </RelativeLayout>
+    <ImageView
+        android:id="@+id/title_bar"
+        android:layout_below="@+id/main_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:src="@drawable/status_line"
+        />
+
+    <ImageView
+        android:layout_below="@+id/title_bar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="54dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/login_logo"
+        android:id="@+id/logo"
+        />
+
+
+    <RelativeLayout
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/logo"
+        android:id="@+id/edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/login_ID"
+            android:hint="이메일"
+            android:textColor="#636363"
+            android:textSize="9pt"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:paddingLeft="23dp"
+            android:paddingRight="23dp"
+            android:layout_marginTop="81px"
+            android:layout_width="400dp"
+            android:layout_height="36dp"
+            android:background="@drawable/edittext_background"/>
+        <EditText
+            android:id="@+id/login_PW"
+            android:hint="비밀번호"
+            android:textColor="#636363"
+            android:textSize="9pt"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:paddingLeft="23dp"
+            android:paddingRight="23dp"
+            android:layout_below="@+id/login_ID"
+            android:layout_marginTop="14dp"
+            android:layout_width="400dp"
+            android:layout_height="36dp"
+            android:background="@drawable/edittext_background"/>
+    </RelativeLayout>
+
+    <Button
+        android:layout_below="@+id/edit_text"
+        android:id="@+id/login_button"
+        android:layout_marginTop="27dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/login"
+        android:layout_width="141dp"
+        android:layout_height="40dp"
+        />
+    <TextView
+        android:id="@+id/connect"
+        android:layout_marginTop="60dp"
+        android:layout_below="@+id/login_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="다른 계정으로 로그인"
+        android:textSize="13dp"
+        android:textColor="#636363"
+        android:layout_centerHorizontal="true"
+        />
+    <Button
+        android:id="@+id/facebook"
+        android:layout_below="@+id/connect"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="44dp"
+        android:layout_width="125dp"
+        android:layout_height="35dp"
+        android:background="@drawable/login_facebook"
+        />
+    <Button
+        android:layout_below="@+id/connect"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="44dp"
+        android:layout_width="125dp"
+        android:layout_height="35dp"
+        android:background="@drawable/login_naver"
+        android:id="@+id/button2" />
+
+    <ImageView
+        android:id="@+id/_bar"
+        android:layout_below="@+id/facebook"
+        android:layout_marginTop="60dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:src="@drawable/status_line"
+        />
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/_bar"
+        >
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/signup_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:layout_alignParentLeft="true"
+            android:text="회원가입"
+            android:textSize="14dp"
+            android:textColor="#e15468"
+            android:background="#00ff0000"
+            />
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/forgot_pwd_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="비밀번호 찾기"
+            android:textColor="#e15468"
+            android:textSize="14dp"
+            android:background="#00ff0000"
+            />
+    </LinearLayout>
+</RelativeLayout>

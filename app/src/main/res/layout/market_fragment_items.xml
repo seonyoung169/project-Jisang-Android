@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp">
+
+    <RelativeLayout
+        android:layout_width="160dp"
+        android:layout_height="220dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/itemandtext_border">
+
+        <ImageView
+            android:id="@+id/marketmain_item_image"
+            android:layout_width="160dp"
+            android:layout_height="160dp" />
+        <TextView
+            android:id="@+id/marketmain_item_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/marketmain_item_image"
+            android:layout_centerHorizontal="true"
+            android:textColor="#000000"
+            android:text="꽈배기 도톰 니트"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/marketmain_item_price_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/marketmain_item_text"
+            android:layout_centerHorizontal="true"
+            android:textColor="#545454"
+            android:paddingBottom="1dp"
+            android:layout_marginBottom="1dp"
+            android:text="34000원"
+            android:textSize="12dp"/>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

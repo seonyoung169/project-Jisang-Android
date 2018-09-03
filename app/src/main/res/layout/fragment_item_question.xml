@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f9f9f9">
+
+        <RelativeLayout
+            android:id="@+id/QnA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignTop="@+id/question_secret_btn"
+                android:layout_marginLeft="20dp"
+                android:text="Q&amp;A 작성"
+                android:textAlignment="textStart"
+                android:textColor="#000000"
+                android:textSize="9pt" />
+
+            <Button
+                android:id="@+id/question_secret_btn"
+                android:layout_width="35dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/unlock" />
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/QnA_register_edit"
+            android:layout_width="324dp"
+            android:layout_height="123dp"
+            android:layout_below="@+id/QnA"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="#ffffff"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" />
+
+        <Button
+            android:id="@+id/register_btn"
+            android:layout_width="65dp"
+            android:layout_height="23dp"
+            android:layout_below="@+id/QnA_register_edit"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="25dp"
+            android:layout_marginTop="9dp"
+            android:background="@drawable/register" />
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/item_question_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+
+</LinearLayout>

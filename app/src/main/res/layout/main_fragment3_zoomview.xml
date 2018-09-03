@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF">
+
+
+    <FrameLayout
+        android:id="@+id/myframe"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <ImageView
+                android:id="@+id/map"
+                android:layout_width="match_parent"
+                android:layout_height="450dp"
+                android:src="@drawable/mainmap_white"
+                android:scaleType="centerInside"/>
+
+            // North section
+            <Button
+                android:id="@+id/north1"
+                android:layout_width="6dp"
+                android:layout_height="6dp"
+                android:background="@drawable/map_drop_go"
+                android:layout_marginTop="178dp"
+                android:layout_marginLeft="148dp"
+                />
+            <Button
+                android:id="@+id/north2"
+                android:layout_width="6dp"
+                android:layout_height="6dp"
+                android:background="@drawable/map_drop_go"
+                android:layout_marginTop="171dp"
+                android:layout_marginLeft="148dp"
+                />
+            <Button
+                android:id="@+id/north6"
+                android:layout_width="6dp"
+                android:layout_height="6dp"
+                android:background="@drawable/map_drop_go"
+                android:layout_marginTop="151dp"
+                android:layout_marginLeft="140dp"
+                />
+            <Button
+                android:id="@+id/north8"
+                android:layout_width="6dp"
+                android:layout_height="6dp"
+                android:background="@drawable/map_drop_go"
+                android:layout_marginTop="164dp"
+                android:layout_marginLeft="140dp"
+                />
+
+            // D section
+
+            <Button
+                android:id="@+id/d19"
+                android:layout_width="7dp"
+                android:layout_height="8dp"
+                android:background="@drawable/map_drop_go"
+                android:layout_marginTop="179dp"
+                android:layout_marginLeft="211dp"
+                />
+            <Button
+                android:id="@+id/d13"
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:background="@drawable/map_drop_go"
+                android:layout_marginTop="179dp"
+                android:layout_marginLeft="258dp"
+                />
+            <Button
+                android:id="@+id/d12"
+                android:layout_width="6dp"
+                android:layout_height="7dp"
+                android:background="@drawable/map_drop_go"
+                android:layout_marginTop="179dp"
+                android:layout_marginLeft="267dp"
+                />
+
+            // South section
+            <Button
+                android:id="@+id/south1"
+                android:layout_width="6dp"
+                android:layout_height="6dp"
+                android:background="@drawable/map_drop_go"
+                android:layout_marginTop="271dp"
+                android:layout_marginLeft="148dp"
+                />
+            <Button
+                android:id="@+id/south4"
+                android:layout_width="6dp"
+                android:layout_height="6dp"
+                android:background="@drawable/map_drop_go"
+                android:layout_marginTop="292dp"
+                android:layout_marginLeft="148dp"
+                />
+            <Button
+                android:id="@+id/south5"
+                android:layout_width="6dp"
+                android:layout_height="6dp"
+                android:background="@drawable/map_drop_go"
+                android:layout_marginTop="299dp"
+                android:layout_marginLeft="148dp"
+                />
+
+            // A section
+            <Button
+                android:id="@+id/a14"
+                android:layout_width="7dp"
+                android:layout_height="10dp"
+                android:background="@drawable/map_drop_go"
+                android:layout_marginTop="266dp"
+                android:layout_marginLeft="234dp"
+                />
+            <Button
+                android:id="@+id/a13"
+                android:layout_width="6dp"
+                android:layout_height="10dp"
+                android:background="@drawable/map_drop_go"
+                android:layout_marginTop="266dp"
+                android:layout_marginLeft="242dp"
+                />
+
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+</RelativeLayout>

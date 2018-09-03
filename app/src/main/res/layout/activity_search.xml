@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:ndroid="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:id="@+id/main_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="58dp" >
+
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#ffffff"
+            android:text="지상"
+            android:textColor="#4c2338"
+            android:textSize="20dp"
+            android:textStyle="normal"
+            android:textAlignment="center"
+            android:layout_marginTop="14dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true" />
+
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/main_title_bar_line"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:background="#EAEAEA"
+        android:layout_below="@+id/main_title_bar"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/main_title_bar"
+        android:background="#FFFFFF">
+
+        <RelativeLayout
+            android:id="@+id/search_edittext_layout"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#F2F2F2">
+
+            <LinearLayout
+                android:layout_width="347dp"
+                android:layout_height="30dp"
+                android:orientation="horizontal"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:background="@drawable/tag_button"
+                >
+
+                <EditText
+                    android:id="@+id/search_edittext"
+                    android:layout_width="298dp"
+                    android:layout_height="28dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/itemsearch_edit_backgroud"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginLeft="1dp"
+                    android:hint="상품 검색"
+                    android:textSize="15dp"
+                    android:paddingLeft="7dp"
+                    android:gravity="left|center" />
+
+                <Button
+                    android:id="@+id/button_in_search_edittext"
+                    android:layout_width="50dp"
+                    android:layout_height="28dp"
+                    android:background="@drawable/seachpage_icon"/>
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/tag_button_line1"
+            android:layout_below="@+id/search_edittext_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/tag_button1"
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:layout_marginLeft="19dp"
+                android:text="#롱스커트"
+                android:textColor="#4E253A"
+                android:textSize="15dp"
+                android:background="@drawable/tag_button"
+                />
+
+            <Button
+                android:id="@+id/tag_button2"
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:layout_marginLeft="7dp"
+                android:text="#핸드메이드"
+                android:textColor="#4E253A"
+                android:textSize="15dp"
+                android:background="@drawable/tag_button" />
+
+            <Button
+                android:id="@+id/tag_button3"
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:layout_marginLeft="7dp"
+                android:background="@drawable/tag_button"
+                android:text="#맨투맨"
+                android:textColor="#4E253A"
+                android:textSize="15dp"/>
+
+            <Button
+                android:id="@+id/tag_button4"
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:layout_marginLeft="7dp"
+                android:background="@drawable/tag_button"
+                android:text="#앙고라"
+                android:textColor="#4E253A"
+                android:textSize="15dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/tag_button_line2"
+            android:layout_below="@+id/tag_button_line1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp">
+
+            <Button
+                android:id="@+id/tag_button5"
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:layout_marginLeft="19dp"
+                android:text="#미디스커트"
+                android:textColor="#4E253A"
+                android:textSize="15dp"
+                android:background="@drawable/tag_button"
+                />
+
+            <Button
+                android:id="@+id/tag_button6"
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:layout_marginLeft="7dp"
+                android:text="#베스트"
+                android:textColor="#4E253A"
+                android:textSize="15dp"
+                android:background="@drawable/tag_button" />
+
+            <Button
+                android:id="@+id/tag_button7"
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:layout_marginLeft="7dp"
+                android:background="@drawable/tag_button"
+                android:text="#가죽"
+                android:textColor="#4E253A"
+                android:textSize="15dp"/>
+
+            <Button
+                android:id="@+id/tag_button8"
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:layout_marginLeft="7dp"
+                android:text="#머플러"
+                android:textColor="#4E253A"
+                android:textSize="15dp"
+                android:background="@drawable/tag_button"
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/tag_button_line3"
+            android:layout_below="@+id/tag_button_line2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:orientation="horizontal" >
+
+
+            <Button
+                android:id="@+id/tag_button9"
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:layout_marginLeft="19dp"
+                android:text="#롱스커트"
+                android:textColor="#4E253A"
+                android:textSize="15dp"
+                android:background="@drawable/tag_button" />
+
+            <Button
+                android:id="@+id/tag_button10"
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:layout_marginLeft="7dp"
+                android:background="@drawable/tag_button"
+                android:text="#핸드메이드"
+                android:textColor="#4E253A"
+                android:textSize="15dp"/>
+
+            <Button
+                android:id="@+id/tag_button11"
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:layout_marginLeft="7dp"
+                android:background="@drawable/tag_button"
+                android:text="#맨투맨"
+                android:textColor="#4E253A"
+                android:textSize="15dp" />
+
+            <Button
+                android:id="@+id/tag_button12"
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:layout_marginLeft="7dp"
+                android:text="#앙고라"
+                android:textColor="#4E253A"
+                android:textSize="15dp"
+                android:background="@drawable/tag_button"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/tag_button_line4"
+            android:layout_below="@+id/tag_button_line3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp">
+
+
+            <Button
+                android:id="@+id/tag_button13"
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:layout_marginLeft="19dp"
+                android:text="#미디스커트"
+                android:textColor="#4E253A"
+                android:textSize="15dp"
+                android:background="@drawable/tag_button" />
+
+            <Button
+                android:id="@+id/tag_button14"
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:layout_marginLeft="7dp"
+                android:background="@drawable/tag_button"
+                android:text="#베스트"
+                android:textColor="#4E253A"
+                android:textSize="15dp"/>
+
+            <Button
+                android:id="@+id/tag_button15"
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:layout_marginLeft="7dp"
+                android:text="#가죽"
+                android:textColor="#4E253A"
+                android:textSize="15dp"
+                android:background="@drawable/tag_button"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/tag_button_line5"
+            android:layout_below="@+id/tag_button_line4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp">
+
+            <Button
+                android:id="@+id/tag_button16"
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:layout_marginLeft="19dp"
+                android:text="#오피스룩"
+                android:textColor="#4E253A"
+                android:textSize="15dp"
+                android:background="@drawable/tag_button" />
+
+            <Button
+                android:id="@+id/tag_button17"
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:layout_marginLeft="7dp"
+                android:text="#머플러"
+                android:textColor="#4E253A"
+                android:textSize="15dp"
+                android:background="@drawable/tag_button"
+                />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

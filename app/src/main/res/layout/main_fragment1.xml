@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f9f9f9"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/locationview_bgup"
+            />
+
+        <Button
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="54dp"
+            android:layout_height="54dp"
+            android:background="@drawable/locationview_logo"
+            />
+
+        <ImageView
+            android:layout_width="236dp"
+            android:layout_height="414dp"
+            android:background="@drawable/locationview_halfcircle"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="80dp"
+            android:id="@+id/imageView" />
+
+        <ImageView
+            android:layout_marginTop="130dp"
+            android:layout_width="150dp"
+            android:layout_height="275dp"
+            android:layout_alignParentRight="true"
+            android:id="@+id/imageView2" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/locationview_bgdown"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/imageView3" />
+        <ImageView
+            android:id="@+id/im1"
+            android:layout_marginTop="80dp"
+            android:layout_width="238dp"
+            android:layout_height="422dp"
+            android:src="@drawable/locationview_menuline"
+            android:layout_alignParentRight="true"
+            />
+
+        <LinearLayout
+            android:layout_alignStart="@+id/im1"
+            android:layout_marginTop="80dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="422dp"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/linearLayout">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="220dp">
+                <TextView
+                    android:id="@+id/locate_name1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="강남"
+                    android:textColor="#000000"
+                    />
+                <Button
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="38dp"
+                    android:layout_height="38dp"
+                    android:background="@drawable/locate_menubtn"
+                    android:id="@+id/location_btn1" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="고속터미널"
+                    android:textColor="#000000"
+                    />
+                <Button
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="38dp"
+                    android:layout_height="38dp"
+                    android:background="@drawable/locate_menubtn"
+                    android:id="@+id/location_btn2" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="75dp"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="영등포"
+                    android:textColor="#000000"
+                    />
+                <Button
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="38dp"
+                    android:layout_height="38dp"
+                    android:background="@drawable/locate_menubtn"
+                    android:id="@+id/location_btn3" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="70dp"
+                android:layout_marginLeft="80dp"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="부평"
+                    android:textColor="#000000"
+                    />
+                <Button
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="38dp"
+                    android:layout_height="38dp"
+                    android:background="@drawable/locate_menubtn"
+                    android:id="@+id/location_btn4" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="50dp"
+                android:layout_marginLeft="120dp"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="의정부"
+                    android:textColor="#000000"
+                    />
+                <Button
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="38dp"
+                    android:layout_height="38dp"
+                    android:background="@drawable/locate_menubtn"
+                    android:id="@+id/location_btn5" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="150dp"
+            android:layout_height="150dp">
+
+            <Button
+                android:id="@+id/locateGo_btn"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:background="#00ff0000"
+                />
+            <TextView
+                android:layout_marginTop="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:id="@+id/location_ground"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="#333333"
+                />
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:id="@+id/location_click"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14dp"
+                android:textColor="#333333"
+                android:layout_below="@+id/location_ground"
+                />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+
+</LinearLayout>

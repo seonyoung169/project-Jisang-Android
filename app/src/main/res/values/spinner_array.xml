@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="shop_loca">
+        <item> 부평</item>
+        <item> 강남</item>
+        <item> 고속터미널</item>
+        <item> 잠실</item>
+        <item> 영등포</item>
+    </string-array>
+
+</resources>

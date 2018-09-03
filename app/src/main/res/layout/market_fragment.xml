@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <RelativeLayout
+        android:id="@+id/main_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:background="#FFFFFF">
+
+        <TextView
+            android:id="@+id/market_title_name"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="#ffffff"
+            android:layout_marginTop="14dp"
+            android:text="매장 이름"
+            android:textAlignment="center"
+            android:textColor="#4c2338"
+            android:textSize="20dp"
+            android:textStyle="normal" />
+
+        <Button
+            android:id="@+id/market_like_button"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="310dp"
+            android:background="@drawable/store_like"/>
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/main_title_bar_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#EAEAEA"
+        android:layout_below="@+id/main_title_bar"/>
+
+    <RelativeLayout
+        android:id="@+id/market_loca_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/main_title_bar_line"
+        android:background="#f2f2f2">
+
+        <Button
+            android:id="@+id/market_locabutton"
+            android:layout_width="66dp"
+            android:layout_height="28dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginLeft="25dp"
+            android:background="@drawable/store_locationmark"/>
+
+
+        <TextView
+            android:id="@+id/market_loca_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="강남 지하상가 b-15"
+            android:textSize="14dp"
+            android:textColor="#4d4d4d"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="16dp" />
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/marketmain_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/market_loca_bar"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="12dp"
+        android:layout_marginLeft="12dp">
+
+    </android.support.v7.widget.RecyclerView>
+
+</RelativeLayout>

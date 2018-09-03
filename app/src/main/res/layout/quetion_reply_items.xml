@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="vertical" android:layout_width="match_parent"
+android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/abc"
+        android:layout_marginTop="17dp"
+        android:layout_marginLeft="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/arroaw"
+        android:layout_width="10dp"
+        android:layout_height="14dp"
+        android:background="@drawable/comment_arrow"
+        />
+    <TextView
+        android:id="@+id/question_reply_writer"
+        android:layout_alignRight="@+id/arroaw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="관리자"
+        android:textColor="#e15468"
+        android:textSize="13dp"
+        />
+    </LinearLayout>
+    <TextView
+    android:id="@+id/question_reply_contet"
+    android:layout_below="@+id/abc"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:layout_marginLeft="42dp"
+        android:layout_marginBottom="14dp"
+    android:text="상품 문의하는 내용 적어지는 부분"
+    android:textSize="11dp"
+        />
+    <ImageView
+        android:layout_below="@+id/question_reply_contet"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#cbcbcb"
+        />
+</RelativeLayout>
+
+

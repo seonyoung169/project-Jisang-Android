@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:id="@+id/main_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:background="#FFFFFF">
+
+        <TextView
+            android:id="@+id/location_textview"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="14dp"
+            android:background="#ffffff"
+            android:text="강남 지하상가"
+            android:textAlignment="center"
+            android:textColor="#4c2338"
+            android:textSize="18dp"
+            android:textStyle="normal" />
+
+        <Button
+            android:id="@+id/registered_back_button"
+            android:layout_width="35dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/backbtn" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="37dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="3dp"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/search" />
+
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:paddingTop="3dp"
+        android:text="오늘의 #강남 HOT ITEM"
+        android:textSize="10dp"
+        android:textAlignment="center"
+        android:textColor="#e15468"
+        android:background="#f7f7f7"
+        />
+
+    <cn.trinea.android.view.autoscrollviewpager.AutoScrollViewPager
+        android:id="@+id/autoViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+    </cn.trinea.android.view.autoscrollviewpager.AutoScrollViewPager>
+
+    <HorizontalScrollView
+        android:id="@+id/btns"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/viewPager"
+        android:layout_marginTop="17dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/sliding_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/item_btn_all"
+                android:layout_width="66dp"
+                android:layout_height="66dp"
+                android:background="@drawable/menu_all" />
+
+            <Button
+                android:id="@+id/item_btn_outer"
+                android:layout_width="66dp"
+                android:layout_height="66dp"
+                android:background="@drawable/menu_outer" />
+
+            <Button
+                android:id="@+id/item_btn_top"
+                android:layout_width="66dp"
+                android:layout_height="66dp"
+                android:background="@drawable/menu_top" />
+
+            <Button
+                android:id="@+id/item_btn_pants"
+                android:layout_width="66dp"
+                android:layout_height="66dp"
+                android:background="@drawable/menu_bottom" />
+
+            <Button
+                android:id="@+id/item_btn_skirt"
+                android:layout_width="66dp"
+                android:layout_height="66dp"
+                android:background="@drawable/menu_skirt" />
+
+            <Button
+                android:id="@+id/item_btn_onepiece"
+                android:layout_width="66dp"
+                android:layout_height="66dp"
+                android:background="@drawable/menu_onepiece" />
+
+            <Button
+                android:id="@+id/item_btn_shoes"
+                android:layout_width="66dp"
+                android:layout_height="66dp"
+                android:background="@drawable/menu_shoes" />
+
+            <Button
+                android:id="@+id/item_btn_bag"
+                android:layout_width="66dp"
+                android:layout_height="66dp"
+                android:background="@drawable/menu_bag" />
+
+            <Button
+                android:id="@+id/item_btn_acc"
+                android:layout_width="66dp"
+                android:layout_height="66dp"
+                android:background="@drawable/menu_acc" />
+
+        </LinearLayout>
+    </HorizontalScrollView>
+</LinearLayout>

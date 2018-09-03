@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <RelativeLayout
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_alignStart="@+id/item_image2"
+            android:layout_width="160dp"
+            android:layout_height="234dp"
+            android:background="@drawable/itemandtext_border"
+            />
+        <ImageView
+            android:id="@+id/item_image2"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            />
+        <LinearLayout
+            android:layout_width="160dp"
+            android:layout_height="74dp"
+            android:orientation="vertical"
+            android:layout_below="@+id/item_image2"
+            android:layout_alignParentStart="true">
+
+            <TextView
+                android:id="@+id/item_name_location2"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="asdfasdf"
+                android:textSize="9dp"
+                android:background="#e15367"
+                android:textColor="#ffffff"
+                />
+            <TextView
+                android:id="@+id/item_name_text2"
+                android:layout_marginTop="1dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="상품 이름"
+                android:textColor="#000000"
+                android:textSize="13dp"
+                />
+
+            <TextView
+                android:layout_marginTop="1dp"
+                android:id="@+id/item_price_text2"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="상품 가격"
+                android:textColor="#545454"
+                android:textSize="9dp"
+                />
+            <TextView
+                android:layout_marginTop="15dp"
+                android:id="@+id/market_loca_text2"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#545454"
+                android:text="매장 이름"
+                android:textSize="8dp"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

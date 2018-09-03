@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:id="@+id/main_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:background="#FFFFFF">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="14dp"
+            android:background="#ffffff"
+            android:text="회원가입"
+            android:textAlignment="center"
+            android:textColor="#4c2338"
+            android:textSize="20dp"
+            android:textStyle="normal" />
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/status_line"
+        >
+    </View>
+
+    <RelativeLayout
+        android:layout_marginTop="89dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="31dp"
+            android:background="@drawable/logincheck_checkmark"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_marginTop="34dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/choice_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textSize="13dp"
+            android:text="지하상가 쇼핑을 이용하시면 일반회원, \n\n'지상'에 입점을 원하시면 상점 관리자를 선택해주세요"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="81dp">
+        <Button
+            android:id="@+id/signup_user_btn"
+            android:layout_width="81dp"
+            android:layout_height="81dp"
+            android:layout_marginLeft="69dp"
+            android:background="@drawable/logincheck_user"
+            />
+        <Button
+            android:id="@+id/signup_storemgr_btn"
+            android:layout_width="81dp"
+            android:layout_height="81dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="69dp"
+            android:background="@drawable/logincheck_storemgr"
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_marginTop="13dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="69dp"
+            android:text="일반 회원"
+            android:textSize="10pt"
+            android:textColor="#4e253a"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="59dp"
+            android:text="상점 관리자"
+            android:textSize="10pt"
+            android:textColor="#4e253a"
+            />
+    </RelativeLayout>
+
+</LinearLayout>

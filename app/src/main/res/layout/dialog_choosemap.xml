@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <Button
+        android:id="@+id/item1"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="140dp"
+        android:layout_marginLeft="280dp"
+        android:background="@drawable/map_gangnam" />
+    <Button
+        android:id="@+id/item2"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="280dp"
+        android:background="@drawable/map_bupyeong"/>
+    <Button
+        android:id="@+id/item3"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="280dp"
+        android:background="@drawable/map_uijeongbu"/>
+    <Button
+        android:id="@+id/item4"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="280dp"
+        android:background="@drawable/map_yeongdeungpo"/>
+    <Button
+        android:id="@+id/item5"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="280dp"
+        android:background="@drawable/map_gobus"/>
+
+
+</LinearLayout>

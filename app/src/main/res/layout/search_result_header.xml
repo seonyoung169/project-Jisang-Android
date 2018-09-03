@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:id="@+id/search_result_text_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true">
+
+            <TextView
+                android:id="@+id/search_market"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="'머플러'"
+                android:textSize="18dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginBottom="14dp"
+                android:textColor="#e15367" />
+
+            <TextView
+                android:id="@+id/search_result_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" 검색 결과 입니다."
+                android:layout_toRightOf="@+id/search_market"
+                android:textSize="18dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginBottom="14dp"
+                android:textColor="#000000"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/result_text_underline"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#e6e6e6"
+        android:layout_below="@+id/search_result_text_layout"
+        android:layout_alignParentRight="true"/>
+
+    <TextView
+        android:id="@+id/allitem_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ALL ITEM"
+        android:textSize="16dp"
+        android:textColor="#000000"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
+        android:layout_below="@+id/result_text_underline"/>
+
+</RelativeLayout>

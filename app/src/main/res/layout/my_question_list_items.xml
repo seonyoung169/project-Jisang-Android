@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/my_question_product_name"
+        android:layout_width="324dp"
+        android:layout_height="38dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        android:background="@drawable/question_titlebar"
+        android:gravity="bottom"
+        android:paddingBottom="5dp"
+        android:paddingLeft="88dp"
+        android:text="상품 이름"
+        android:textColor="#000000"
+        android:textSize="11pt" />
+
+    <TextView
+        android:id="@+id/my_question_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/my_question_product_name"
+        android:layout_marginRight="6dp"
+        android:layout_marginTop="40dp"
+        android:background="#00ff0000"
+        android:text="xxxx년 xx월 xx일"
+        android:textColor="#4d4d4d"
+        android:textSize="7pt" />
+
+    <TextView
+        android:id="@+id/my_question_enquires"
+        android:layout_width="324dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/my_question_product_name"
+        android:layout_centerHorizontal="true"
+        android:background="#ffffff"
+        android:gravity="top"
+        android:paddingLeft="88dp"
+        android:paddingTop="7dp"
+        android:text="문의 내용"
+        android:textSize="11pt" />
+
+    <Button
+        android:layout_width="52dp"
+        android:layout_height="52dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/question_pic"
+        android:text="상품\n 대표 이미지" />
+
+    </RelativeLayout>
+    <ImageView
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/question_shadow"
+        />
+</LinearLayout>
